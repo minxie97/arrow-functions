@@ -195,4 +195,4 @@ console.log(joe.scopeArrow());
 // 2. What is "this" when joe.scopeArrow() is invoked?
 //"this" refers to the global object
 // 3. Explain why "this" is different when an arrow function is used.
-//arrow functions don't define their own context since it doesn't have its own this context. They inherit that from the parent scope whenever you call this. in this case, it calls a global object. 
+//arrow functions don't rebind this and instead inherits the parent's context. so in this case this refers to the global object.
